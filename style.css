@@ -512,6 +512,7 @@ inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -10px 14px rgba(66, 66, 66, 0
     flex-direction: column;
     gap: 15px;
     position: absolute;
+    z-index: 10;
 }
 
 .linediv-1 p, .linediv-2 p, .linediv-3 p, .linediv-4 p, .linediv-5 p, .linediv-6 p{
@@ -520,6 +521,7 @@ inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -10px 14px rgba(66, 66, 66, 0
     font-weight: 400;
     font-style: normal;
     color: rgb(185, 185, 185);
+    z-index: 10;
 } 
 
 .linediv-1{
