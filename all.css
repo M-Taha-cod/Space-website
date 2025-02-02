@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+* { 
+margin: 0%;
+padding: 0%;
+font-family: 'poppins', 'sans-serif' ;
+box-sizing: border-box;
+}
+
+body{
+height: 100%;
+width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 3;
+    background-color: transparent;
+}
+
+.logo-name{
+    cursor: default;
+    color: white;
+}
+
+.buttons-names{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons-names a{
+    
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.buttons-names a:hover{
+    color: white;
+}
+
+.buttons-names a::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: purple;
+    z-index: -1;
+    transition: all 1s;
+}
+
+.buttons-names a:hover::before {
+    width: 360%;
+}
+
+.earth-div{
+    height: 100%;
+    width: 100%;
+    background-image: url(./images/earth\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.earth-section, .aboutus-section{
+    height: 100%;
+    width: 80%;
+    padding: 10px;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heading{
+    font-size: 40px;
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(201, 201, 201);
+}
+
+.er-toptext{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(196, 196, 196);
+}   
+
+.er-topics{
+    color: rgb(211, 211, 211);
+}
+
+.er-topicstexts{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.vid-btn{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.vid-btn a{
+    background-color:transparent;
+    border: 2px solid purple;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: purple;
+    text-decoration: none;
+}
+
+.vid-btn a:hover{
+    color: aqua;
+    border: 2px solid aqua;
+}
+
+.aboutus-div{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/moon\ land.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+}
+
+.aboutus-section h2{
+    color: rgb(221, 221, 221);
+}
+
+.about-text{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+
+.aboutus-section ul{
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.aboutus-section h3{
+    color: rgb(55, 164, 184);
+}
+
+.satellite-section{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    background-image: url(./images/stars.jpg);
+    background-size: contain;
+    cursor: default;
+}
+
+.satellite-div{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+    width: 80%;
+}
+
+.st-toptext{
+    font-size: 15px;
+    color: rgb(224, 224, 224);
+}
+
+.satellite-div h2{
+    color: rgb(182, 182, 182);
+}
+
+.satellite-div ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 30px;
+}
+
+.satellite-div ul img{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.wiki-link{
+    font-size: 20px;
+    color: rgb(88, 208, 238);
+    text-decoration: none;
+    padding: 20px;
+    text-shadow: 1px 1px 10px black;
+}
+
+.moon-section{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/moon\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: default;
+}
+
+.moon-div, .bkh-div, .saturn-div, .europa-div, .mercury-div, .titan-div, .neptune-div, .mars-div{
+    padding: 10px;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.moon-div p, .moon-div h4 ,.bkh-div p, .bkh-div h4 , .saturn-div p , .saturn-div h4, .europa-div p, .europa-div h4,
+.mercury-div p, .mercury-div h4, .titan-div p, .titan-div h4, .neptune-div p, .neptune-div h4, .mars-div p, .mars-div h4{
+    text-shadow: 1px 1px 10px black;
+}
+
+.moon-toptext, .bhk-toptext, .sat-toptext, .eu-toptext, .mer-toptext, .tit-toptext, .nep-toptext, .mars-toptext{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.moon-div h2, .bkh-div h2, .saturn-div h2, .europa-div h2, .mercury-div h2, .titan-div h2, .neptune-div h2, .mars-div h2{
+    color: rgb(209, 209, 209);
+    text-shadow: 1px 1px 10px black;
+}
+
+.moon-div p, .moon-div li, .bkh-div p, .bkh-div li, .saturn-div p, .saturn-div li, .europa-div p ,.europa-div li,
+.mercury-div p, .mercury-div li, .titan-div p, .titan-div li, .neptune-div p, .neptune-div li, .mars-div p, .mars-div li{
+    font-size: 14px;
+}
+
+.moon-div ul, .moon-div ol, .bkh-div ul, .bkh-div ol, .saturn-div ul, .saturn-div ol ,.europa-div ul, .europa-div ol,
+.mercury-div ul, .mercury-div ol, .titan-div ul, .titan-div ol, .neptune-div ul, .neptune-div ol, .mars-div ul, .mars-div ol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 30px;
+}
+
+.moon-div li, .bkh-div li, .saturn-div li, .europa-div li, .mercury-div li, .titan-div li, .neptune-div li, .mars-div li{
+    text-shadow: 0px 0px 30px rgb(0, 0, 0);
+}
+
+.bkh-section{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/blackhole\ planet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: default;
+}
+
+.saturn-section{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/saturn\ ring.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: default;
+}
+
+.europa-section{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/Europa-moon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: default;
+}
+
+.mercury-section{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/mercury\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: default;
+}
+
+.titan-section{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/titan\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: default;
+}
+
+.neptune-section{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/naptune\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: default;
+}
+
+.mars-section{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/mars\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    cursor: default;
+}
+
+@media (max-width:2560px) and (min-width:1921px) {
+    .logo-name{
+        font-size: 30px;
+    }
+    
+    .buttons-names a{
+        font-size: 23px;
+    }
+}
+
+@media (max-width:1920px) and (min-width:1601px) {
+    .logo-name{
+        font-size: 25px;
+    }
+    
+    .buttons-names a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:499px) and (min-width:390px) {
+    .logo-name{
+        font-size: 12px;
+    }
+
+    .buttons-names{
+        gap: 2px;
+    }
+    
+    .buttons-names a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:389px) and (min-width:350px) {
+    .logo-name{
+        font-size: 10px;
+    }
+
+    .buttons-names{
+        gap: 2px;
+    }
+    
+    .buttons-names a{
+        font-size: 10px;
+    }
+}
